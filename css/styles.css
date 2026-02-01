@@ -10,6 +10,7 @@ body {
 .main-header {
     background-color: #ffffff;
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 a {
     text-decoration: none;
@@ -40,7 +41,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+    
 
 }
 .header-nav {
@@ -101,7 +102,6 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
-   transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link.carrent {
     position: relative;
@@ -191,8 +191,11 @@ h1 {
     padding: 16px 32px;
     margin-top: 48px;
     border: none;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .btn-primary:hover,
 .btn-primary:focus {
@@ -233,6 +236,7 @@ h2 {
 }
 .hero-item {
    width: 264px;
+   
 }
 .hero-list {
      display: flex;
@@ -248,7 +252,6 @@ h2 {
     width: 264px;
     height: 112px;
     background-color: #f4f4fd;
-    padding-bottom: 8px;
 }
 h3 {
     color: #2e2f42;
@@ -257,7 +260,7 @@ h3 {
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin: 0;
-    padding: 0;
+    padding-top: 8px;
 }
 .hero-text {
     padding-bottom: 8px;
@@ -271,7 +274,10 @@ p {
     letter-spacing: 0.02em;
     color: #434455;
     margin: 0;
-    padding: 0;
+
+}
+.text {
+    padding-top: 8px;
 }
 .team-text {
     padding-bottom: 72px;
@@ -313,42 +319,52 @@ p {
     border-radius: 50%;
     background-color: #4d5ae5;
 }
+.team-social:hover,
+.team-social:focus {
+    background-color: #404bbf;
+}
+/* .portfolio-section {
+position: relative;
+} */
 .text-portfolio {
     padding-bottom: 72px;
     text-align: center;
 }
 .portfolio-item {
-    position: relative;
-    overflow: hidden;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .portfolio-item-overlay {
-    background-color: #4d5ae5;
-    width: 360px;
-    height: 300px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 40px 32px 164px;
-    transform: translateY(140%);
+    position: relative;
+    overflow: hidden;
+} 
+.portfolio-item:hover .portfolio-item-overlay .text-overlay {
+    transform: translateY(0);
+} 
+.text-overlay { padding: 40px 32px 164px;
+    transform: translateY(100%);
     transition: transform 300ms ease-in-out;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-item:hover .portfolio-item-overlay {
-    transform: translateY(0);
-} 
-.text-overlay {
-    color:#ffffff;
+    background-color: #4d5ae5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:#f4f4fd;
+    width: 360px; 
+    height: 300px;
+    
 }
 .portfolio-list {
     display: flex;
     flex-wrap: wrap; 
     row-gap: 48px;
     column-gap: 24px;
+    position: relative;
 }
 
 .portfolio-name {
@@ -363,17 +379,17 @@ img {
 .portfolio-text {
     padding-bottom: 8px;
 }
-.container.footer-container {
-    margin: 0;
+.footer-container {
+   display: flex;
+    align-items: baseline;
+    gap: 120px;  
 }
 .main-footer {
     max-width: 1440px;
     background-color: #2e2f42;
     padding-top: 100px;
     padding-bottom: 100px;
-    display: flex;
-    gap: 120px;
-    align-items: flex-start;
+   
 }
 .text-footer {
     padding-top: 16px;
@@ -395,7 +411,6 @@ img {
 .footer-social-list {
     display: flex;
     gap: 16px;
-
 }
 .footer-social-link {
     width: 40px;
@@ -405,7 +420,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
