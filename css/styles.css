@@ -22,6 +22,8 @@ a:focus,
 .nav-link.carrent 
 {
     color: #404bbf;
+    transition-duration: 250ms;
+    transition-timing-function: ccubic-bezier(0.4, 0, 0.2, 1);
 }
 ul {
     list-style-type: none;
@@ -143,6 +145,7 @@ ul {
     color: #434455;
     gap: 40px;
 }
+
 .section-hero {
     margin: 0;
     padding: 188px 0;
@@ -188,6 +191,8 @@ h1 {
 .btn-primary:hover,
 .btn-primary:focus {
     background-color: #404bbf;
+     transition-duration: 250ms;
+    transition-timing-function: ccubic-bezier(0.4, 0, 0.2, 1);
 }
 h2 {
     font-weight: 700;
@@ -316,10 +321,13 @@ p {
     top: 0;
     left: 0;
     padding: 40px 32px 164px;
-    transform: translateY(-100%);
+    transform: translateY(140%);
+    transition: transform 300ms ease-in-out;
 }
 .portfolio-item:hover .portfolio-item-overlay {
     transform: translateY(0);
+     transition-duration: 250ms;
+    transition-timing-function: ccubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-overlay {
     color:#ffffff;
@@ -368,7 +376,6 @@ img {
 .footer-text {
     color: #ffffff;
     padding-bottom: 16px;
-  
 }
 .footer-link {
     position: absolute;
@@ -390,6 +397,5 @@ img {
    position: relative;
    display: flex;
    justify-content: space-between;
-  
 }
 
