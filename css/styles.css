@@ -304,6 +304,26 @@ p {
     padding-bottom: 72px;
     text-align: center;
 }
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-item-overlay {
+    background-color: #4d5ae5;
+    width: 360px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px 32px 164px;
+    transform: translateY(-100%);
+}
+.portfolio-item:hover .portfolio-item-overlay {
+    transform: translateY(0);
+}
+.text-overlay {
+    color:#ffffff;
+}
 .portfolio-list {
     display: flex;
     flex-wrap: wrap; 
