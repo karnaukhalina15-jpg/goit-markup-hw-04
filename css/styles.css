@@ -74,9 +74,6 @@ ul {
 .section {
     padding: 120px 0;
 }
-.section-hero {
-    background-color: #2e2f42;
-}
 .nav-list {
     display: flex;
     align-items: center;
@@ -150,7 +147,7 @@ ul {
 }
 
 .section-hero {
-    
+    background-color: #2e2f42;
     margin: 0 auto;
     padding: 188px 0;
     background-image: url(../images/people-office.jpg);
@@ -261,13 +258,11 @@ h3 {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin: 0;
-    padding-top: 8px;
+    margin: 8px 0;
+    
 }
 .hero-text {
-    padding-bottom: 8px;
     width: 264px;
-    height: 24px;
 }
 p {
     font-weight: 400;
@@ -277,9 +272,6 @@ p {
     color: #434455;
     margin: 0;
 
-}
-.text {
-    padding-top: 8px;
 }
 .team-text {
     padding-bottom: 72px;
@@ -376,11 +368,12 @@ position: relative;
     height: 120px;
     border-top: none;
 }
+.portfolio-text {
+    margin-bottom: 8px;
+    margin-top: 0;
+}
 img {
     display: block;
-}
-.portfolio-text {
-    padding-bottom: 8px;
 }
 .footer-container {
    display: flex;
@@ -395,13 +388,12 @@ img {
    
 }
 .text-footer {
-    padding-top: 16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;  
     color: #f4f4fd;
     width: 264px;
-    margin: 0;
+    margin-top: 16px;
 }
 .footer-logo {
     color: #f4f4fd;
@@ -409,7 +401,7 @@ img {
 }
 .footer-text {
     color: #ffffff;
-    padding-bottom: 16px;
+   margin-bottom: 16px;
     font-weight: 500;
 }
 .footer-social-list {
